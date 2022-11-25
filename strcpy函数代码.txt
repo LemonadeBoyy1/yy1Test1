@@ -1,2 +1,11 @@
-11111
-杨一B20032313
+char *strcpy(char *src){
+    int length = 0;
+    char *temp = src;
+        while(*temp){
+            length++;
+            temp++;
+        }
+    char *str = malloc(sizeof(char)*(length+1));
+    return str;
+    
+}
